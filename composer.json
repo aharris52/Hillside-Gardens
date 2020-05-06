@@ -1,0 +1,17 @@
+{
+  "name": "328/Hillside-Gardens",
+  "authors": [
+    {
+      "name": "Andrew Harris",
+      "email": "aharris@mail.greenriver.edu"
+    },
+    {
+      "name": "Benjamin Halbert",
+      "email": "bhalbert@mail.greenriver.edu"
+
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
