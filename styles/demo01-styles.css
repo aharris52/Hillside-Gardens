@@ -1,19 +1,54 @@
 html {
-    background-color: #263547;
+    background-color: #27343e;
 }
 
 body {
-    background-color: #263547;
+    background-color: #27343e;
 }
 
 #header-left {
-    background-color: #263547;
+    background-color: #27343e;
 }
 
 #header-right {
-    background-color: #263547;
+    background-color: #27343e;
 }
 
 #map {
-    background-color: #263547;
+    background-color: #27343e;
+    padding-bottom: 1em;
+}
+
+#bark {
+    background-color: #27343e;
+}
+
+#topRow {
+    background-color: #27343e;
+}
+
+#mtn3 {
+    padding: 0 0;
+    margin: 0 0;
+    border: none;
+}
+
+#footRow1 {
+    color: white;
+}
+
+#footRow2 {
+    color: white;
+}
+
+#facebook {
+    color: white;
+}
+
+#myURL {
+    color: white;
+}
+
+#fbLink {
+    color: white;
 }

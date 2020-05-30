@@ -17,22 +17,11 @@
 
 </head>
 <body>
-<!-- Navbar -->
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="row">
-        <div class="col-6" id="header-left">
-            <img src="../images/hillside fb.png" class="img-fluid" alt="Responsive image">
-        </div>
-        <div class="col-6" id="header-right">
-            <h6>filler text</h6>
-        </div>
-    </div>
-</nav>-->
 
 <div class="container-fluid" >
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-6" id="header-left">
-            <img src="../images/hillside fb.png" class="img-fluid" alt="Responsive image">
+            <img src="../images/hillside fb 2.png" class="img-fluid" alt="Responsive image">
         </div>
         <div class="col-6" id="header-right">
             <h6>filler text</h6>
@@ -40,11 +29,21 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <img src="../images/mountain3.jpg" class="img-fluid" alt="Responsive image">
-</div>
+<!-- Body Container -->
+<div class="container-fluid" id="topRow">
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-- Image -->
+    <div class="row justify-content-center">
+        <div class="col align-self-center">
+            <img id="mtn3" src="../images/mountain3.jpg" class="rounded" alt="logo">
+        </div>
+    </div>
+    <!--Image row -->
 
-<div class="container-fluid">
+
+
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-- Products -->
     <div class="row justify-content center">
         <div class="col-12">
             <div class="card" style="width: 18rem;">
@@ -56,54 +55,71 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div><br>
+    <!-- Content row -->
 
-<div class="container-fluid" id="bark">
-    <img src="../images/bark strip.PNG" class="img-fluid" alt="Responsive image">
-</div>
-
-<div class="container-fluid" id="map">
-    <img src="../images/map.PNG" class="img-fluid" alt="Responsive image">
-</div>
-
-<!-- Footer Content-->
-<div class="container-fluid">
-    <div class="row justify-content-between">
-        <div class="col">
-            Serving King and Pierce Counties since 1992
-        </div>
-        <div class="col">
-            Services
-        </div>
-        <div class="col">
-            Hours
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-- FOOTER START -->
+    <!-- Bark -->
+    <div class="row justify-content center" id="bark">
+        <div class="col-12">
+            <img src="../images/wood-strip-01.PNG" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-</div>
 
+    <!-- Map -->
+    <div class="row justify-content center" id="map">
+        <div class="col-12">
+            <img src="../images/map1.PNG" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
 
-<!-- Footer -->
-<div class="container">
-    <div class="col-align-self-center">
-        <div class="row justify-content-center">
-            <!-- found on mdbootstrap.com -->
-            <footer class="page-footer font-small blue">
-                <!-- Copyright -->
-                <div id="footer" class="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a id="myURL" href="#">GreenRiverDev</a>
-                </div>
-            </footer>
-        </div><!-- Footer row 1-->
-        <div class="row justify-content-center">
-            <div class="justify-content center">
-                <!-- Facebook -->
-                <a href="#"
-                   class="fa-lg p-2 m-2 li-ic"><i class="fab fa-facebook-f grey-text"></i></a>
+    <!-- Footer Row 1-->
+    <div class="row justify-content-center" id="footRow1">
+        <div class="col">
+            <img src="../images/bottom-logo.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-auto">
+            <h6>Address:</h6>
+            <p>27213 WA-410 E</p>
+            <p>Buckley, Wa 98321</p>
+            <h6>Phone:</h6>
+            <p>(360) 829-2707</p>
+        </div>
+        <div class="col col-lg-2">
+            <h6>Hours of Operation</h6>
+            <p>Monday -Friday:</p>
+            <p>8:00am - 5:00pm</p>
+            <p>Saturday:</p>
+            <p>9:00am - 2:00pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </div>
+    <!-- Footer Row 1-->
+
+    <!-- Footer row 2-->
+    <div class="row justify-content-center" id="footRow2">
+        <!-- found on mdbootstrap.com -->
+        <footer class="page-footer">
+            <!-- Copyright -->
+            <div id="footer" class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a id="myURL" href="#">Hillside Gardens</a>
             </div>
-        </div><!-- Footer row 2-->
-    </div><!-- Footer column -->
-</div><!-- Footer container -->
+        </footer>
+    </div><!-- Footer row 2-->
+
+    <!-- Footer row 3-->
+    <div class="row justify-content-center" id="footRow3">
+        <footer class="page-footer">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/pages/Hillside-Gardens-Sawdust-Shavings-Co/1007213572652447"
+               target="_blank"
+               class="fa-lg p-2 m-2 li-ic"><i id="fbLink" class="fab fa-facebook-f grey-text"></i></a><br>
+        </footer>
+    </div><!-- Footer row 3-->
+
+</div><!-- Body container -->
+
 
 <!-- fontAwesome link-->
 <script src="https://kit.fontawesome.com/b3af656e9f.js" crossorigin="anonymous"></script>
