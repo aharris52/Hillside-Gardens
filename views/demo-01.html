@@ -16,89 +16,250 @@
     <link rel="icon" href="../images/hillside favicon.png" type="image/png"/>
 
 </head>
-<body>
-
-<div class="container-fluid" >
-    <div class="row justify-content-center">
-        <div class="col-6" id="header-left">
+<body id="htmlBody">
+<!-- HEADER -->
+<!---------------------------------------------------------------------------------------------------------->
+<div class="container" id="body">
+    <div class="container-fluid" >
+        <div class="row justify-content-center">
             <img src="../images/hillside fb 2.png" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col-6" id="header-right">
-            <h6>filler text</h6>
-        </div>
     </div>
-</div>
-
-<!-- Body Container -->
-<div class="container-fluid" id="topRow">
-    <!---------------------------------------------------------------------------------------------------------->
-    <!-- Image -->
-    <div class="row justify-content-center">
+    <!-- NavBar Header -->
+    <div class="container">
+    <div class="row fixed-top position-sticky" id="navRow"> <!--header-->
         <div class="col align-self-center">
-            <img id="mtn3" src="../images/mountain3.jpg" class="rounded" alt="logo">
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg"><!-- overall navbar-->
+                <div class="container" id="navBar">
+                    <button class="navbar-toggler" type="button"
+                            data-toggle="dropdown" data-target="#myTogglerNav"
+                            aria-controls="myTogglerNav"
+                            aria-expanded="true" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" data-toggle="collapse" id="myTogglerNav"><!-- navbar collapseing menu-->
+                        <div class="navbar-nav">
+                            <div class="nav-item nav-link">
+                                <a id="navAbout" href="#about"
+                                   name ="link">About</a> <!-- navlink about-->
+                            </div>
+                            <div class="nav-item nav-link">
+                                <a  href="#products"
+                                    name ="link"
+                                    id="navProd">Products</a> <!--navlink products-->
+                            </div>
+                            <div class="nav-item nav-link ">
+                                <a id="navSvcs" href="#services"
+                                   name ="link">Services</a><!-- navlink services-->
+                            </div>
+                        </div> <!-- navbar nav-->
+                    </div> <!-- collapse-->
+                    <img class="m-1" src="../images/hillside favicon.png"
+                         width="70"
+                         height="70" alt="icon">
+                    <a class="navbar-brand">HILLSIDE</a><!-- navbar heading-->
+                </div> <!--nav container -->
+            </nav> <!-- overall nav -->
         </div>
-    </div>
-    <!--Image row -->
-
-
-
+    </div><br><!-- end of header-->
     <!---------------------------------------------------------------------------------------------------------->
-    <!-- Products -->
-    <div class="row justify-content center">
-        <div class="col-12">
-            <div class="card" style="width: 18rem;">
-                <img src="../images/mountain3_small.jpg" class="card-img-top" alt="material">
-                <div class="card-body">
-                    <h5 class="card-title">Type of Material</h5>
-                    <p class="card-text">Description of Material</p>
-                    <a href="#" class="btn btn-primary">Order Material</a>
-                </div>
+    <!-- CLOSE HEADER -->
+<!-- BODY -->
+<!---------------------------------------------------------------------------------------------------------->
+
+    <!-- About -->
+    <!---------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="about">
+        <br>
+        <h3>About</h3>
+        <div class="hr">
+            <hr>
+        </div>
+        <p>Since 1983 Hillside Gardens Sawdust& Shavings has been the choice for your wood products needs.
+        Whether it's a small landscape fresh-up, or a complete transformation we have the product you need
+        at a fair price. Recognized by the Pierce County Conservation District as an outstanding community
+        partner. We're here to help you conserve and beautify your own small piece of the Great Northwest.</p>
+        <br>
+        <!-- Top Banner -->
+        <!-- Banner Image -->
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class="col align-self-center">
+            <!-- Image -->
+            <div class="row justify-content-center">
+                <img class="image-fluid" src="../images/tacoma-banner.png" alt="logo">
             </div>
         </div>
-    </div><br>
-    <!-- Content row -->
+    </div>
 
+    <!-- Products -->
     <!---------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="products">
+        <br>
+        <!-- Heading Row -->
+        <h3>Products</h3>
+        <div class="hr">
+            <hr>
+        </div>
+        <p>We carry the finest locally-sourced, all natural wood products. You won't find any
+            artificial dyes or petro-chemical fertilizers here. We sell only nature's best and untreated
+            products. All top soil is organic and locally sourced, and the bark and chips are from local suppliers.</p>
+        <!-- Close Heading Row -->
+
+        <div class="row justify-content-center">
+            <div class="col-12 .justify-content-end">
+                <div class="card" style="width: 30rem;">
+                    <div class="card-header">
+                        <img src="../images/topsoil.jpg" class="card-img-top" alt="material">
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                </div><br>
+
+                <div class="card" style="width: 30rem;">
+                    <div class="card-header">
+                        <img src="../images/pinebark-large_2_500x.jpg" class="card-img-top" alt="material">
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                </div><br>
+
+                <div class="card" style="width: 30rem;">
+                    <div class="card-header">
+                        <img src="../images/sawdust.jpg" class="card-img-top" alt="material">
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                </div><br>
+
+                <div class="card" style="width: 30rem;">
+                    <div class="card-header">
+                        <img src="../images/cedar-playground-chips.jpg" class="card-img-top" alt="material">
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <!-- Mid Banner -->
+        <!-- Banner Image -->
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class=".col align-self-center">
+            <!-- Image -->
+            <div class="row justify-content-center">
+                <img src="../images/saw-banner.png" class="image-fluid" alt="logo">
+            </div>
+        </div>
+
+    </div>
+    <!-- Close Products -->
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <!-- Services -->
+    <!---------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="services">
+        <br>
+        <!-- Heading Row -->
+        <div class="row justify-content-start"></div>
+        <h3>Services</h3>
+        <div class="hr">
+            <hr>
+        </div>
+        <p>We have been in business over 30 years because we know how business is done. If you need delivery
+        to your home, jobsite, or farm we're here for you.</p>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../images/kb7.jpg" class="card-img-top" alt="material">
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                <img src="../images/hopper.jpg" class="card-img-top" alt="material">
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+        </div>
+    </div><!-- Close Services -->
+    <br>
+
+</div><!-- CLOSE BODY CONTAINER -->
+<!---------------------------------------------------------------------------------------------------------->
     <!-- FOOTER START -->
     <!-- Bark -->
     <div class="row justify-content center" id="bark">
-        <div class="col-12">
-            <img src="../images/wood-strip-01.PNG" class="img-fluid" alt="Responsive image">
+        <div class=".col align-self-center">
+            <img src="../images/wood-strip.png" class="img-fluid" alt="Responsive image">
         </div>
     </div>
 
     <!-- Map -->
     <div class="row justify-content center" id="map">
-        <div class="col-12">
-            <img src="../images/map1.PNG" class="img-fluid" alt="Responsive image">
+        <div class=".col align-self-center">
+            <a href="https://www.google.com/maps/dir/47.3408096,-122.1931818/
+            hillside+gardens+sawdust+buckley+wa/@47.2584832,-122.3044268,11z/
+            data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5490efc7a5c1da77:0x7679e394d2549150!2m2!1d-122.0667807!2d47.1608686"
+            target="_blank">
+                <img src="../images/map.PNG" class="img-fluid" alt="Responsive image"></a>
         </div>
     </div>
 
+    <div class="hr">
+        <hr>
+    </div>
+
     <!-- Footer Row 1-->
-    <div class="row justify-content-center" id="footRow1">
-        <div class="col">
-            <img src="../images/bottom-logo.png" class="img-fluid" alt="Responsive image">
+    <div class="row justify-content-between" id="footRow1">
+        <div class="col-md-auto">
+            <img src="../images/bottom logo.png" class="img-fluid" alt="Responsive image">
         </div>
         <div class="col-md-auto">
             <h6>Address:</h6>
             <p>27213 WA-410 E</p>
             <p>Buckley, Wa 98321</p>
+            <br>
             <h6>Phone:</h6>
             <p>(360) 829-2707</p>
+            <p>Admin</p>
         </div>
-        <div class="col col-lg-2">
+        <div class="col-md-auto">
             <h6>Hours of Operation</h6>
             <p>Monday -Friday:</p>
-            <p>8:00am - 5:00pm</p>
+            <p>8:00am - 5:00pm</p><br>
             <p>Saturday:</p>
-            <p>9:00am - 2:00pm</p>
+            <p>9:00am - 2:00pm</p><br>
             <p>Sunday: Closed</p>
         </div>
     </div>
-    <!-- Footer Row 1-->
+    <!-- Close Footer Row 1-->
+
+    <div class="hr">
+        <hr>
+    </div>
 
     <!-- Footer row 2-->
     <div class="row justify-content-center" id="footRow2">
+        <div class="hr">
+            <hr>
+        </div>
         <!-- found on mdbootstrap.com -->
         <footer class="page-footer">
             <!-- Copyright -->
