@@ -1,121 +1,297 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Hillside Gardens</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../styles/indexStyles.css">
-    <title>Hello, world!</title>
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="icon" href="../images/hillside favicon.png" type="image/png"/>
+
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar">
+<body id="htmlBody">
+<!-- HEADER -->
+<!---------------------------------------------------------------------------------------------------------->
+<div class="container" id="body">
+    <div class="container-fluid" >
+        <div class="row justify-content-center">
+            <img src="../images/hillside fb 2.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    <!-- NavBar Header -->
     <div class="container">
-        <a class="navbar-brand" href="demo-02.html"><img src="../images/mountain3_small.jpg" alt="Mt.Rainier"></a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="demo-02.html">Blank</a>
-                </li>
-                <li class="nav-item" id="contaction">
-                    <a class="nav-link" href="demo-02.html">Blank</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="demo-02.html">Blank</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container">
-    <h1>Hello, world!</h1>
-    <p>This is Ben and Andrew's super awesome project!</p>
-</div>
-
-
-<div class="row">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6">
-        <div class="card" style="width: 45rem;">
-            <img src="../images/mountain3_small.jpg" class="card-img-top" alt="material">
-            <div class="card-body">
-                <h5 class="card-title">Type of Material</h5>
-                <p class="card-text">Description of Material</p>
-                <a href="#" class="btn btn-primary">Order Material</a>
+        <div class="row fixed-top position-sticky" id="navRow"> <!--header-->
+            <div class="col align-self-center">
+                <nav class="navbar navbar-dark bg-dark navbar-expand-lg"><!-- overall navbar-->
+                    <div class="container" id="navBar">
+                        <button class="navbar-toggler" type="button"
+                                data-toggle="dropdown" data-target="#myTogglerNav"
+                                aria-controls="myTogglerNav"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" data-toggle="collapse" id="myTogglerNav"><!-- navbar collapseing menu-->
+                            <div class="navbar-nav">
+                                <div class="nav-item nav-link">
+                                    <a id="navAbout" href="#about"
+                                       name ="link">About</a> <!-- navlink about-->
+                                </div>
+                                <div class="nav-item nav-link">
+                                    <a  href="#products"
+                                        name ="link"
+                                        id="navProd">Products</a> <!--navlink products-->
+                                </div>
+                                <div class="nav-item nav-link ">
+                                    <a id="navSvcs" href="#services"
+                                       name ="link">Services</a><!-- navlink services-->
+                                </div>
+                            </div> <!-- navbar nav-->
+                        </div> <!-- collapse-->
+                        <img class="m-1" src="../images/hillside favicon.png"
+                             width="70"
+                             height="70" alt="icon">
+                        <a class="navbar-brand">HILLSIDE</a><!-- navbar heading-->
+                    </div> <!--nav container -->
+                </nav> <!-- overall nav -->
             </div>
-        </div>
-    </div>
-</div>
+        </div><br><!-- end of header-->
+        <!---------------------------------------------------------------------------------------------------------->
+        <!-- CLOSE HEADER -->
+        <!-- BODY -->
+        <!---------------------------------------------------------------------------------------------------------->
 
-<br><br><br>
-<div class="container">
-    <hr>
-</div>
-<br><br>
-<div class="container-fluid" id="bark">
-    <img src="../images/bark strip.PNG" class="img-fluid" alt="Responsive image">
-</div>
-
-<div class="container-fluid justify-content-center" id="map">
-    <img src="../images/map.PNG" class="img-fluid" alt="Responsive image">
-</div>
-
-<br><br>
-
-<footer class="bg-dark">
-    <div class="row">
-        <div class="col-sm-4">
-            <div><img src="" alt="logo"></img></div>
-            <div><img src="" alt="award"></img></div>
-        </div>
-
-        <div class="col-sm-4">
-            <table>
-                <ul>
-                    <li>Phone: xxx-xxx-xxxx</li>
-                    <li>Address: </li>
-                    <li><a><img src="" alt="social medial"></a></li>
-                </ul>
-            </table>
-        </div>
-        <div class="col-sm-4">
-            <ul>
-                <li>Mon-Fri: 8am-5pm</li>
-                <li>Sat: 9am-2pm</li>
-                <li>Sun: closed</li>
-            </ul>
-        </div>
-    </div>
-    <a class="loginbtn" href="login-02.html"><button>Login</button></a>
-
-    <div class="col-align-self-center">
-        <div class="row justify-content-center">
-            <!-- found on mdbootstrap.com -->
-            <footer class="page-footer font-small blue">
-                <!-- Copyright -->
-                <div id="footer" class="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a id="myURL" href="#">GreenRiverDev</a>
+        <!-- About -->
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class="container-fluid" id="about">
+            <br>
+            <h3>About</h3>
+            <div class="hr">
+                <hr>
+            </div>
+            <p>Since 1983 Hillside Gardens Sawdust& Shavings has been the choice for your wood products needs.
+                Whether it's a small landscape fresh-up, or a complete transformation we have the product you need
+                at a fair price. Recognized by the Pierce County Conservation District as an outstanding community
+                partner. We're here to help you conserve and beautify your own small piece of the Great Northwest.</p>
+            <br>
+            <!-- Top Banner -->
+            <!-- Banner Image -->
+            <!---------------------------------------------------------------------------------------------------------->
+            <div class="col align-self-center">
+                <!-- Image -->
+                <div class="row justify-content-center">
+                    <img class="image-fluid" src="../images/tacoma-banner.png" alt="logo">
                 </div>
-            </footer>
-        </div><!-- Footer row 1-->
-        <div class="row justify-content-center">
-            <div class="justify-content center">
-                <!-- Facebook -->
-                <a href="#"
-                   class="fa-lg p-2 m-2 li-ic"><i class="fab fa-facebook-f grey-text"></i></a>
             </div>
-        </div><!-- Footer row 2-->
-    </div><!-- Footer column -->
-</footer>
+        </div>
+
+        <!-- Products -->
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class="container-fluid" id="products">
+            <br>
+            <!-- Heading Row -->
+            <h3>Products</h3>
+            <div class="hr">
+                <hr>
+            </div>
+            <p>We carry the finest locally-sourced, all natural wood products. You won't find any
+                artificial dyes or petro-chemical fertilizers here. We sell only nature's best and untreated
+                products. All top soil is organic and locally sourced, and the bark and chips are from local suppliers.</p>
+            <!-- Close Heading Row -->
+
+            <div class="row justify-content-center">
+                <div class="col-12 .justify-content-end" id="productCards">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-header">
+                            <img src="../images/topsoil.jpg" class="card-img-top" alt="material">
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                    </div><br>
+
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-header">
+                            <img src="../images/pinebark-large_2_500x.jpg" class="card-img-top" alt="material">
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                    </div><br>
+
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-header">
+                            <img src="../images/sawdust.jpg" class="card-img-top" alt="material">
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                    </div><br>
+
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-header">
+                            <img src="../images/cedar-playground-chips.jpg" class="card-img-top" alt="material">
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <!-- Mid Banner -->
+            <!-- Banner Image -->
+            <!---------------------------------------------------------------------------------------------------------->
+            <div class=".col align-self-center">
+                <!-- Image -->
+                <div class="row justify-content-center">
+                    <img src="../images/saw-banner.png" class="image-fluid" alt="logo">
+                </div>
+            </div>
+
+        </div>
+        <!-- Close Products -->
+        <!---------------------------------------------------------------------------------------------------------->
+
+        <!-- Services -->
+        <!---------------------------------------------------------------------------------------------------------->
+        <div class="container-fluid" id="services">
+            <br>
+            <!-- Heading Row -->
+            <div class="row justify-content-start"></div>
+            <h3>Services</h3>
+            <div class="hr">
+                <hr>
+            </div>
+            <p>We have been in business over 30 years because we know how business is done. If you need delivery
+                to your home, jobsite, or farm we're here for you.</p>
+
+            <div class="col-12 .justify-content-end" id="productCards">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../images/kb7.jpg" class="card-img-top" alt="material">
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../images/hopper.jpg" class="card-img-top" alt="material">
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                </div>
+            </div>
+        </div><!-- Close Services -->
+        <br>
+
+    </div><!-- CLOSE BODY CONTAINER -->
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-- FOOTER START -->
+    <!-- Bark -->
+    <div class="row justify-content center" id="bark">
+        <div class=".col align-self-center">
+            <img src="../images/wood-strip.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="row justify-content center" id="map">
+        <div class=".col align-self-center">
+            <a href="https://www.google.com/maps/dir/47.3408096,-122.1931818/
+            hillside+gardens+sawdust+buckley+wa/@47.2584832,-122.3044268,11z/
+            data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5490efc7a5c1da77:0x7679e394d2549150!2m2!1d-122.0667807!2d47.1608686"
+               target="_blank">
+                <img src="../images/map.PNG" class="img-fluid" alt="Responsive image"></a>
+        </div>
+    </div>
+
+    <div class="hr">
+        <hr>
+    </div>
+
+    <!-- Footer Row 1-->
+    <div class="row justify-content-between" id="footRow1">
+        <div class="col-md-auto">
+            <img src="../images/bottom logo.png" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-md-auto">
+            <h6>Address:</h6>
+            <p>27213 WA-410 E</p>
+            <p>Buckley, Wa 98321</p>
+            <br>
+            <h6>Phone:</h6>
+            <p>(360) 829-2707</p>
+            <p>Admin</p>
+        </div>
+        <div class="col-md-auto">
+            <h6>Hours of Operation</h6>
+            <p>Monday -Friday:</p>
+            <p>8:00am - 5:00pm</p><br>
+            <p>Saturday:</p>
+            <p>9:00am - 2:00pm</p><br>
+            <p>Sunday: Closed</p>
+        </div>
+    </div>
+    <!-- Close Footer Row 1-->
+
+    <div class="hr">
+        <hr>
+    </div>
+
+    <!-- Footer row 2-->
+    <div class="row justify-content-center" id="footRow2">
+        <div class="hr">
+            <hr>
+        </div>
+        <!-- found on mdbootstrap.com -->
+        <footer class="page-footer">
+            <!-- Copyright -->
+            <div id="footer" class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a id="myURL" href="#">Hillside Gardens</a>
+            </div>
+        </footer>
+    </div><!-- Footer row 2-->
+
+    <!-- Footer row 3-->
+    <div class="row justify-content-center" id="footRow3">
+        <footer class="page-footer">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/pages/Hillside-Gardens-Sawdust-Shavings-Co/1007213572652447"
+               target="_blank"
+               class="fa-lg p-2 m-2 li-ic"><i id="fbLink" class="fab fa-facebook-f grey-text"></i></a><br>
+        </footer>
+    </div><!-- Footer row 3-->
+
+</div><!-- Body container -->
+
+
+<!-- fontAwesome link-->
+<script src="https://kit.fontawesome.com/b3af656e9f.js" crossorigin="anonymous"></script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://kit.fontawesome.com/b3af656e9f.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

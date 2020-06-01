@@ -1,6 +1,156 @@
-footer{
-    padding: 10px;
-    color: white;
-    background-color: #263547;
-    width: 100%;
+html {
+    background-color: #27343e;
 }
+
+body {
+    background-color: #27343e;
+}
+
+nav, nav.navbar.navbar-dark.bg-dark.navbar-expand-lg {
+    background-color: #27343e;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+div.row, div.row.fixed-top, div.jumbotron, div.container-fluid, div.container, div. {
+    background-color: #27343e;
+    color: white;
+}
+
+nav, a {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#navAbout, #navProd, #navSvcs {
+    background-color: #27343e;
+    color: white;
+    font-size: xx-large;
+}
+
+div.card {
+    width: 30rem;
+}
+
+div.hr {
+    color: white;
+    background-color: white;
+}
+
+div#about, div#services, div#products {
+    font-size: xx-large;
+}
+
+#productCards{
+    position: relative;
+    left: 25%;
+    right: -75%;
+}
+
+#htmlBody {
+    background-color: #27343e;
+}
+
+#navBar {
+    background-color: #27343e;
+    color: white;
+}
+
+#navRow {
+    background-color: #27343e;
+    color: white;
+}
+
+#navLogo {
+    padding: 0 0;
+    margin: 0 0;
+    border: none;
+}
+
+#navBar1 {
+    background-color: #27343e;
+    color: white;
+}
+
+#navBar2 {
+    background-color: #27343e;
+    color: white;
+}
+
+#headNav {
+    background-color: #27343e;
+    color: white;
+}
+
+.nav-item {
+    background-color: #27343e;
+    color: white;
+}
+
+#header-left {
+    background-color: #27343e;
+}
+
+#header-mid {
+    background-color: #27343e;
+    color: white;
+}
+
+#header-right {
+    background-color: #27343e;
+    color: white;
+}
+
+#body {
+    background-color: #27343e;
+}
+
+#map {
+    background-color: #27343e;
+    padding-bottom: 1em;
+}
+
+#bark {
+    background-color: #27343e;
+}
+
+#mtn3 {
+    padding: 0 0;
+    margin: 0 0;
+    border: none;
+}
+
+#footRow1 {
+    color: white;
+}
+
+#footRow2 {
+    color: white;
+}
+
+#facebook {
+    color: white;
+}
+
+#myURL {
+    color: white;
+}
+
+#fbLink {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+
