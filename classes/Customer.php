@@ -3,7 +3,8 @@
 
 class Customer
 {
-    private $_name;
+    private $_firstName;
+    private $_lastName;
     private $_phone;
     private $_email;
     private $_product;
@@ -13,20 +14,29 @@ class Customer
     {
     }
 
-    public function Customer($name, $phone, $email, $product, $quantity){
-        $this->setName($name);
+    public function Customer($firstName, $lastName, $phone, $email, $product, $quantity){
+        $this->setFirstName($firstName);
+        $this->setLastName($lastName);
         $this->setPhone($phone);
         $this->setEmail($email);
         $this->setProduct($product);
-        $this->setQuantity($quantity);
+        $this->setQty($quantity);
     }
 
-    function setName($name){
-        $this->_name = $name;
+    function setFirstName($name){
+        $this->_firstName = $name;
     }
 
-    function getName(){
-        return $this->_name;
+    function getFirstName(){
+        return $this->_firstName;
+    }
+
+    function setLastName($name){
+        $this->_lastName = $name;
+    }
+
+    function getLastName(){
+        return $this->_lastName;
     }
 
     function setPhone($phone){
@@ -53,11 +63,11 @@ class Customer
         return $this->_product;
     }
 
-    function setQuantity($quantity){
+    function setQty($quantity){
         $this->_quantity = $quantity;
     }
 
-    function getQuantity(){
+    function getQty(){
         return $this->_quantity;
     }
 }
