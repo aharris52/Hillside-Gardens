@@ -5,7 +5,7 @@
     <title>Hillside Gardens</title>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="../styles/indexStyles.css">
+    <link rel="stylesheet" href="../styles/demo-02-styles.css">
 
     <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -105,8 +105,8 @@
                 products. All top soil is organic and locally sourced, and the bark and chips are from local suppliers.</p>
             <!-- Close Heading Row -->
 
-            <div class="row justify-content-center">
-                <div class="col-12 .justify-content-end" id="productCards">
+            <div class="row">
+                <div class="col-sm-6">
                     <div class="card" style="width: 30rem;">
                         <div class="card-header">
                             <img src="../images/topsoil.jpg" class="card-img-top" alt="material">
@@ -114,9 +114,13 @@
                         <div class="card-body">
                             <p>Lorem ipsum</p>
                         </div>
-                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
-                    </div><br>
-
+                        <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
                     <div class="card" style="width: 30rem;">
                         <div class="card-header">
                             <img src="../images/pinebark-large_2_500x.jpg" class="card-img-top" alt="material">
@@ -124,9 +128,18 @@
                         <div class="card-body">
                             <p>Lorem ipsum</p>
                         </div>
-                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
-                    </div><br>
+                        <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
+                    </div>
+                </div>
+            </div>
 
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
                     <div class="card" style="width: 30rem;">
                         <div class="card-header">
                             <img src="../images/sawdust.jpg" class="card-img-top" alt="material">
@@ -134,9 +147,13 @@
                         <div class="card-body">
                             <p>Lorem ipsum</p>
                         </div>
-                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
-                    </div><br>
-
+                        <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
                     <div class="card" style="width: 30rem;">
                         <div class="card-header">
                             <img src="../images/cedar-playground-chips.jpg" class="card-img-top" alt="material">
@@ -144,25 +161,64 @@
                         <div class="card-body">
                             <p>Lorem ipsum</p>
                         </div>
-                        <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
+                        <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
                     </div>
-                    <br>
                 </div>
             </div>
+
+            <div id="scroll"></div>
+
             <div class="hr">
                 <hr>
             </div>
             <!-- Mid Banner -->
-            <!-- Banner Image -->
+            <!-- Collapsible Form -->
             <!---------------------------------------------------------------------------------------------------------->
-            <div class=".col align-self-center">
-                <!-- Image -->
-                <div class="row justify-content-center">
-                    <img src="../images/saw-banner.png" class="image-fluid" alt="logo">
-                </div>
+            <div class="collapse" id="collapseExample">
+                <form method="post" action="#">
+                    <div class="form-group-row">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                        <span style="display: none" class="err" id="errFname">Please enter a first name</span>
+                    </div>
+                    <div class="form-group-row">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                        <span style="display: none" class="err" id="errLname">Please enter a first name</span>
+                    </div>
+                    <div class="form-group-row">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" name="phone">
+                        <span style="display: none" class="err" id="errPhone">Please enter a first name</span>
+                    </div>
+                    <div class="form-group-row">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                        <span style="display: none" class="err" id="errEmail">Please enter a first name</span>
+                    </div>
+                    <div class="form-check">
+                        <label for="products">Produts</label>
+                        <select name="products">
+                            <option value="shavings">Shavings/Sawdust</option>
+                            <option value="course">Chips/Bark (course)</option>
+                            <option value="medium">Chips/Bark (medium)</option>
+                            <option value="small">Chips/Bark (small)</option>
+                            <option value="playground">Playground Chips</option>
+                        </select>
+                    </div>
+                    <div class="form-group-row">
+                        <label for="quantity">Quantity (yards)</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity">
+                    </div>
+                    <div class="form-group-row">
+                        <a class="btn btn-primary float-right" href="Summary">Next ></a>
+                    </div>
+                </form>
             </div>
 
-        </div>
         <!-- Close Products -->
         <!---------------------------------------------------------------------------------------------------------->
 
@@ -179,27 +235,35 @@
             <p>We have been in business over 30 years because we know how business is done. If you need delivery
                 to your home, jobsite, or farm we're here for you.</p>
 
-            <div class="col-12 .justify-content-end" id="productCards">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="../images/kb7.jpg" class="card-img-top" alt="material">
+            <div class="row .justify-content-center" id="">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="../images/kb7.jpg" class="card-img-top" alt="material">
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
                     </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
                 </div>
-                <br>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="../images/hopper.jpg" class="card-img-top" alt="material">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="../images/hopper.jpg" class="card-img-top" alt="material">
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum</p>
+                        </div>
+                        <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
+                            data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
                     </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#" class="btn btn-primary">Order Material</a></div>
                 </div>
-            </div>
         </div><!-- Close Services -->
         <br>
 
@@ -292,6 +356,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../JS/collapse.js"></script>
 
 </body>
 </html>
