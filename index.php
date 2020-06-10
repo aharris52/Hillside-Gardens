@@ -26,3 +26,4 @@ $f3->route('GET /', function(){
     echo '<h1>Hello world!</h1>';
     $GLOBALS['controller']->home();
 });
+$f3->run();
