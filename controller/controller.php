@@ -1,30 +1,29 @@
 <?php
 
-// turn on error reporting
-ini_set('display_errors',1);
-error_reporting(E_ALL);
+class Controller
+{
+    private $_f3; //router
+    private $_validation; //validation object
 
-// require the autoload file
-require_once('vendor/autoload.php');
-//require_once("model/data-layer.php");
-//require_once("model/validation.php");
+    /**
+     * Controller constructor.
+     * @param $f3
+     * @param $validation
+     */
+    public function __construct($f3, $validation)
+    {
+        $this->_f3 = $f3;
+        $this->_validation = $validation;
+    }
 
-//Start a session
-session_start();
+    /**
+     * Display the default route
+     */
+    public function home()
+    {
+        $view = new Template();
+        //echo '<h1>Welcome to my Home Page</h1>';
+        echo $view->render('views/demo-01.html');
+    }
 
-// create an instance of the base class
-$f3 = Base::instance();
-global $validation;
-$validation = new Validation();
-$controller = new Controller($f3, $validation);
-
-//echo '<h1>Hello world!</h1>';
-
-// define a default route
-$f3->route('GET /', function(){
-    //troubleshooting
-    //echo '<h1>Hello world controller!</h1>';
-    $GLOBALS['controller']->home();
-
-    //var_dump($GLOBALS['controller']);
-});
+}
