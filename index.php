@@ -6,11 +6,11 @@ error_reporting(E_ALL);
 
 // require the autoload file
 require_once('vendor/autoload.php');
-//require_once("model/data-layer.php");
-//require_once("model/validation.php");
+require_once("model/data-layer.php");
+require_once("model/validation.php");
 
 //Start a session
-//session_start();
+session_start();
 
 // create an instance of the base class
 $f3 = Base::instance();
@@ -23,7 +23,8 @@ $controller = new Controller($f3, $validation);
 // define a default route
 $f3->route('GET /', function(){
     //troubleshooting
-    echo '<h1>Hello world!</h1>';
+    //echo '<h1>Hello world!</h1>';
     $GLOBALS['controller']->home();
 });
 $f3->run();
+
