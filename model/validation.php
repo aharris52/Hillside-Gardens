@@ -42,4 +42,14 @@ class Validation
             return true;
         }
     }
+
+    function validQuantity($quantity){
+        $quantity = str_replace(' ', '', $quantity);
+        return is_numeric($quantity);
+    }
+
+    function validProduct($product){
+        $checkProduct = getProducts();
+        return in_array($product, $checkProduct);
+    }
 }
