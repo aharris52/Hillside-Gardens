@@ -77,24 +77,28 @@ $f3->route('GET /', function($f3) {
             }
 
             //define query
-            $sql = "INSERT INTO `Unfulfilled` VALUES ('NULL',:fName, :lName, :phone, :email, : :product, :qty)";
+            $sql_customer = "INSERT INTO `Customer` VALUES ('NULL',:fName, :lName, :phone, :email)";
+            $sql_order = "INSERT INTO `Order` VALUES ('NULL', :cust_foreign, :prod_foreign, :qty, 'NULL', 'NULL')";
 
             //prepare statement
-            $statement =  $dbh->prepare($sql);
+            $statement_customer =  $dbh->prepare($sql_customer);
+            $statement_order =  $dbh->prepare($sql_order);
 
             //bind parameters
-            $statement->bindParam(':fName', $fName, PDO::PARAM_STR);
-            $statement->bindParam(':lName', $lName, PDO::PARAM_STR);
-            $statement->bindParam(':phone', $phone, PDO::PARAM_STR);
-            $statement->bindParam(':email', $email, PDO::PARAM_STR);
-            $statement->bindParam(':product', $product, PDO::PARAM_STR);
-            $statement->bindParam(':qty', $qty, PDO::PARAM_STR);
+            $statement_customer->bindParam(':fName', $fName, PDO::PARAM_STR);
+            $statement_customer->bindParam(':lName', $lName, PDO::PARAM_STR);
+            $statement_customer->bindParam(':phone', $phone, PDO::PARAM_STR);
+            $statement_customer->bindParam(':email', $email, PDO::PARAM_STR);
+            //$statement->bindParam(':product', $product, PDO::PARAM_STR);
+            $statement_order->bindParam(':qty', $qty, PDO::PARAM_STR);
 
             //Execute the statement
-            $statement->execute();
+            $statement_customer->execute();
+            $statement_order->execute();
 
             //process the result
-            $row = $statement->fetch(PDO::FETCH_ASSOC);
+            $row = $statement_customer->fetch(PDO::FETCH_ASSOC);
+            $row = $statement_order->fetch(PDO::FETCH_ASSOC);
             //echo $row['fname'];
         }
     }
