@@ -163,12 +163,13 @@
                     <div class="card-body">
                         <p>Lorem ipsum</p>
                     </div>
-                    <div class="card-footer"><a href="#scroll"><button class="btn btn-primary"
-                                                                       type="button"
-                                                                       data-toggle="collapse"
-                                                                       data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Order Material
-                    </button></a></div>
+                    <div class="card-footer"><a href="#scroll">
+                        <button class="btn btn-primary"
+                               type="button"
+                               data-toggle="collapse"
+                               data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Order Material
+                        </button></a></div>
                 </div>
             </div>
         </div><br>
@@ -219,7 +220,7 @@
                                    class="form-control"
                                    id="email"
                                    name="email"
-                                   placeholder="Company">
+                                   placeholder="Email">
                         </div><!-- Email -->
 
                         <!-- Material -->
@@ -232,7 +233,7 @@
                                     <repeat group="{{ @material }}" value="{{ @product }}">
                                         <option value="{{ @product }}"
                                                 name="material">
-                                            <check if="{{ @product == @selected }}">selected="selected"</check>>{{ @product }}</option>
+                                            <check if="{{ @product == @selected }}"> selected="selected" </check>> {{ @product }} </option>
                                     </repeat>
                                 </select>
                             </div>
@@ -246,7 +247,7 @@
 
                             <div class="form-group col-md-6">
                                 <label for="qty">Quantity</label>
-                                <input type="url"
+                                <input type="number"
                                        class="form-control"
                                        id="qty"
                                        name="qty"
@@ -258,7 +259,9 @@
 
                         <!-- Button -->
                         <div class="col-sm-8">
-                            <button type="submit" class="btn btn-secondary">Next</button>
+                            <button type="submit"
+                                    class="btn btn-secondary"
+                                    href="home">Next</button>
                         </div>
                 </fieldset>  <!-- Contact Info -->
         </div>

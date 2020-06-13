@@ -50,7 +50,6 @@ class Controller
                 $this->_f3->set('errors["quantity"]', "Please make a valid selection");
             }
 
-<<<<<<< HEAD
             if (empty($this->_f3->get('errors'))) {
                 $this->_f3->set('first', $_POST['firstName']);
                 $this->_f3->set('last', $_POST['lastName']);
@@ -58,24 +57,12 @@ class Controller
                 $this->_f3->set('email', $_POST['email']);
                 $this->_f3->set('products', $_POST['products']);
                 $this->_f3->set('quantity', $_POST['quantity']);
-                $view = new Template();
-                //echo '<h1>Welcome to my Home Page</h1>';
-                echo $view->render('views/demo-01.html');
-            }
-=======
-            if (empty($f3->GET('errors'))) {
-                $fName = $_POST['firstName'];
-                $lName = $_POST['lastName'];
-                $phone = $_POST['phone'];
-                $email = $_POST['email'];
-                $product = $_POST['products'];
-                $qty = $_POST['quantity'];
                 writeOrder($qty, $product);
                 writeCustomer($fName, $lName, $phone, $email);
             }
-            $view = new Template();
-            echo $view->render('views/demo-01.html');
->>>>>>> a7839b93aeb619bb47d810a7469be660414f93a5
         }
+        $view = new Template();
+        echo '<h1>Welcome to my Home Page</h1>';
+        echo $view->render('views/demo-01.html');
     }
 }
