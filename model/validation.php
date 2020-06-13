@@ -56,20 +56,6 @@ class Validation
             ? FALSE : TRUE;
     }
 
-    /** Return a value indicating if product qty is eligible for
-      delivery or not. Only orders of 5yds or more are eligible for
-      delivery.
-    @param String $email
-    @return boolean
-     */
-    function delivery($qty){
-        if($qty < 5){
-            return false;
-        } else {
-            return true;
-        }
-    }
-
     /** Return a value indicating if every value in
     the $selectedCondiments array is in the list of
     valid condiments.
@@ -94,13 +80,28 @@ class Validation
         return true;
     }
 
+    function validProduct($product){
+        $checkProduct = getProducts();
+        return in_array($product, $checkProduct);
+    }
+
     function validQuantity($quantity){
         $quantity = str_replace(' ', '', $quantity);
         return is_numeric($quantity);
     }
 
-    function validProduct($product){
-        $checkProduct = getProducts();
-        return in_array($product, $checkProduct);
+
+    /** Return a value indicating if product qty is eligible for
+      delivery or not. Only orders of 5yds or more are eligible for
+      delivery.
+    @param String $quantity
+    @return boolean
+     */
+    function delivery($quantity){
+        if($quantity < 5){
+            return false;
+        } else {
+            return true;
+        }
     }
 }
