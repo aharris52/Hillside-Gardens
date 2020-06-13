@@ -79,7 +79,7 @@
         <p>Since 1983 Hillside Gardens Sawdust & Shavings has been the choice for your wood products needs.
         Whether it's a small landscape fresh-up, or a complete transformation we have the product you need
         at a fair price. Recognized by the Pierce County Conservation District as an outstanding community
-        partner. We're here to help you conserve and beautify your own small piece of the Great Northwest. Latency!</p>
+        partner. We're here to help you conserve and beautify your own small piece of the Great Northwest.</p>
         <br>
         <!-- Top Banner -->
         <!-- Banner Image -->
@@ -179,9 +179,8 @@
         <!---------------------------------------------------------------------------------------------------------->
         <div class="collapse" id="collapseExample">
             <!-- Conact Info -->
-            <form id="guestbook" action="thankYou.php" method="post">
+            <form id="guestbook" action="#" method="post">
                 <fieldset class="form-group" >
-                    <legend>Contact Info</legend>
                     <div class="form-row">
                         <div class="form-group col-md-6"><!-- first name -->
                             <label for="firstName">First Name</label>
@@ -223,7 +222,7 @@
                                    placeholder="Company">
                         </div><!-- Email -->
 
-                        <!-- State -->
+                        <!-- Material -->
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="material">Material</label><br>
@@ -231,28 +230,35 @@
                                         id="material"
                                         name="material">
                                     <repeat group="{{ @material }}" value="{{ @product }}">
-                                        <option value="{{ @product }}" name="material">
+                                        <option value="{{ @product }}"
+                                                name="material">
                                             <check if="{{ @product == @selected }}">selected="selected"</check>>{{ @product }}</option>
                                     </repeat>
                                 </select>
                             </div>
+
                             <!-- Error message -->
                             <span class="error">
-                    <check if="{{ isset(@errors['seeking']) }}">
-                        {{ @errors['seeking'] }}
-                    </check>
-                </span><br>
+                        <check if="{{ isset(@errors['quantity']) }}">
+                            {{ @errors['quantity'] }}
+                        </check>
+                        </span><br>
+
+                            <div class="form-group col-md-6">
+                                <label for="qty">Quantity</label>
+                                <input type="url"
+                                       class="form-control"
+                                       id="qty"
+                                       name="qty"
+                                       placeholder="Quantity">
+                                <span class="err"
+                                      id="errQty">Please choose how much you want</span>
+                            </div>
                         </div>
 
-                        <div class="form-group col-md-6">
-                            <label for="qty">Quantity</label>
-                            <input type="url"
-                                   class="form-control"
-                                   id="qty"
-                                   name="qty"
-                                   placeholder="Quantity">
-                            <span class="err"
-                                  id="errLinkedin">Please choose how much you want</span>
+                        <!-- Button -->
+                        <div class="col-sm-8">
+                            <button type="submit" class="btn btn-secondary">Next</button>
                         </div>
                 </fieldset>  <!-- Contact Info -->
         </div>

@@ -24,11 +24,18 @@ $validator = new Validation();
 $controller = new Controller($f3, $validator);
 $db = new Database();
 
-// define a default route
+/*// define a default route
 $f3->route('GET /', function($f3) {
     $view = new template();
     echo $view->render('views/demo-01.html');
     echo("this is a test");
+});*/
+
+// define a default route
+$f3->route('GET /', function(){
+    //troubleshooting
+    //echo '<h1>Hello world!</h1>';
+    $GLOBALS['controller']->home();
 });
 
 $f3->run();
