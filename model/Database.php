@@ -30,31 +30,44 @@ class Database
     }
 
     function writeOrder($order)
+{
+    //var_dump($order);
+
+    //Write to database
+    // 1. define query
+    $sql = "INSERT INTO `Unfulfilled` VALUES ('NULL', 'NULL', 'NULL', :qty, 'NULL', 'NULL')";
+
+    // 2. prepare statement
+    $statement =  $dbh->prepare($sql);
+
+    // 3. bind parameters
+    $statement->bindParam(':product', $product->getproduct());
+    $statement->bindParam(':qty', $qty->getQty());
+
+    // 4. Execute the statement
+    $statement->execute();
+
+    // 5. process the result
+    $row = $statement->fetch(PDO::FETCH_ASSOC);
+    //echo $row['fname'];
+}
+
+    function writeCustomer($order)
     {
         //var_dump($order);
 
-        //Convert condiments array to a string
-        $conds = $order->getCondiments();
-        if (empty($conds)) {
-            $conds = "";
-        } else {
-            $conds = implode(", ", $conds);
-        }
-
         //Write to database
         // 1. define query
-        $sql = "INSERT INTO `Unfulfilled` VALUES ('NULL',:fName, :lName, :phone, :email, : :product, :qty)";
+        $sql = "INSERT INTO `Customer` VALUES ('NULL',:fName, :lName, :phone, :email)";
 
         // 2. prepare statement
         $statement =  $dbh->prepare($sql);
 
         // 3. bind parameters
-        $statement->bindParam(':fName', $fName, PDO::PARAM_STR);
-        $statement->bindParam(':lName', $lName, PDO::PARAM_STR);
-        $statement->bindParam(':phone', $phone, PDO::PARAM_STR);
-        $statement->bindParam(':email', $email, PDO::PARAM_STR);
-        $statement->bindParam(':product', $product, PDO::PARAM_STR);
-        $statement->bindParam(':qty', $qty, PDO::PARAM_STR);
+        $statement->bindParam(':fName', $fName->getFname());
+        $statement->bindParam(':lName', $lName->getLname());
+        $statement->bindParam(':phone', $phone->getPhone());
+        $statement->bindParam(':email', $email->getEmail());
 
         // 4. Execute the statement
         $statement->execute();
@@ -64,5 +77,23 @@ class Database
         //echo $row['fname'];
     }
 
+    function getOrders()
+    {
+        //Read fro database
+        //1. Define the query
+        $sql = "SELECT * FROM food_order 
+                ORDER BY date_time DESC";
 
+        //2. Prepare the statement
+        $statement = $this->_dbh->prepare($sql);
+
+        //3. Bind the parameters - SKIP
+
+        //4. Execute the statement
+        $statement->execute();
+
+        //5. Process the results
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }
