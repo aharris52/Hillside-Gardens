@@ -3,8 +3,8 @@
 //retrieve products fxn
 function getProducts()
 {
-    $products = array("Organic Compost", "Sawdust & Shavings", "Bark",
-        "Wood Chips");
+    $products = array("Organic Compost", "Sawdust & Shavings", "Bark & Chips -Fine-",
+        "Bark & Chips -Medium-","Bark & Chips -Coarse-",);
     return $products;
 }
 
