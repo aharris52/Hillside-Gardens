@@ -57,11 +57,11 @@ class Controller
                 $email = $_POST['email'];
                 $product = $_POST['products'];
                 $qty = $_POST['quantity'];
-                $view = new Template();
-                //echo '<h1>Welcome to my Home Page</h1>';
-                echo $view->render('views/demo-01.html');
+                writeOrder($qty, $product);
+                writeCustomer($fName, $lName, $phone, $email);
             }
-
+            $view = new Template();
+            echo $view->render('views/demo-01.html');
         }
     }
 }

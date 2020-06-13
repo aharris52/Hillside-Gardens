@@ -29,7 +29,7 @@ class Database
         }
     }
 
-    function writeOrder($order)
+    function writeOrder($qty, $product)
 {
     //var_dump($order);
 
@@ -52,7 +52,7 @@ class Database
     //echo $row['fname'];
 }
 
-    function writeCustomer($order)
+    function writeCustomer($fName, $lName, $phone, $email)
     {
         //var_dump($order);
 
