@@ -35,7 +35,7 @@ class Database
 
     //Write to database
     // 1. define query
-    $sql = "INSERT INTO `Unfulfilled` VALUES ('NULL', 'NULL', 'NULL', :qty, 'NULL', 'NULL')";
+    $sql = "INSERT INTO `Orders` VALUES ('NULL', '', '', :qty, 'NULL')";
 
     // 2. prepare statement
     $statement =  $dbh->prepare($sql);
