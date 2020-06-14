@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hillside Gardens</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/demo01-styles.css">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/hillside favicon.png" type="image/png"/>
+    <!--<include href="includes/header.htm"></include>-->
+
+</head>
+<body>
+    <div class="container-fluid">
+        <label for="ownerid" class="control-label"><strong>Profile</strong></label>
+        <div class="" id="ownerid">
+            <ul class="list-group">
+                <li class="list-group-item">Name: {{ @SESSION.user->getFirst() }} {{ @SESSION.user->getLast() }} </li>
+                <li class="list-group-item">Gender: {{ @SESSION.user->getGender() }}</li>
+                <li class="list-group-item">Age: {{ @SESSION.user->getAge() }}</li>
+                <li class="list-group-item">Phone: {{ @SESSION.user->getPhone() }}</li>
+                <li class="list-group-item">Email: {{ @SESSION.user->getEmail() }}</li>
+                <li class="list-group-item">State: {{ @SESSION.user->getState() }}</li>
+                <li class="list-group-item">Seeking: {{ @SESSION.user-> getSeeking() }}</li>
+                <check if="{{ @SESSION.user instanceOf PremiumMember }}">
+                    <li class="list-group-item">
+                        Interests: {{ implode(@SESSION.user->getIndoor(), ", ") }}, {{ implode(@SESSION.user->getOutdoor(), ", ") }}
+                    </li>
+                </check>
+            </ul>
+        </div><br>
+    </div>
+</body>

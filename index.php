@@ -32,10 +32,16 @@ $db = new Database();
 });*/
 
 // define a default route
-$f3->route('GET|POST /home', function(){
+$f3->route('GET|POST /', function(){
     //troubleshooting
     //echo '<h1>Hello world!</h1>';
     $GLOBALS['controller']->home();
+});
+
+// summary
+$f3->route('GET /summary', function() {
+    $GLOBALS['controller']->summary();
+    //session_destroy();
 });
 
 $f3->run();
