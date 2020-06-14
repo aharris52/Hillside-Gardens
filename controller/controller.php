@@ -57,8 +57,8 @@ class Controller
                 $this->_f3->set('email', $_POST['email']);
                 $this->_f3->set('products', $_POST['products']);
                 $this->_f3->set('quantity', $_POST['quantity']);
-                writeOrder($qty, $product);
                 writeCustomer($fName, $lName, $phone, $email);
+                writeOrder($qty, $product);
             }
         }
         $view = new Template();
