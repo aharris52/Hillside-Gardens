@@ -22,7 +22,7 @@ class Database
         try {
             //Instantiate a database object
             $this->_dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-            //echo 'Connected to database!';
+            echo 'Connected to database!';
         }
         catch(PDOException $e) {
             echo $e->getMessage();
@@ -38,7 +38,8 @@ class Database
     $sql = "INSERT INTO `Orders` VALUES ('NULL', '', '', :qty, 'NULL')";
 
     // 2. prepare statement
-    $statement =  $dbh->prepare($sql);
+    $statement = $this->_dbh->prepare($sql);
+
 
     // 3. bind parameters
     $statement->bindParam(':product', $product->getproduct());
@@ -61,11 +62,11 @@ class Database
         $sql = "INSERT INTO `Customer` VALUES ('NULL',:fName, :lName, :phone, :email)";
 
         // 2. prepare statement
-        $statement =  $dbh->prepare($sql);
+        $statement = $this->_dbh->prepare($sql);
 
         // 3. bind parameters
-        $statement->bindParam(':fName', $fName->getFname());
-        $statement->bindParam(':lName', $lName->getLname());
+        $statement->bindParam(':first', $fName->getFname());
+        $statement->bindParam(':last', $lName->getLname());
         $statement->bindParam(':phone', $phone->getPhone());
         $statement->bindParam(':email', $email->getEmail());
 
@@ -73,8 +74,9 @@ class Database
         $statement->execute();
 
         // 5. process the result
-        $row = $statement->fetch(PDO::FETCH_ASSOC);
-        //echo $row['fname'];
+        $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+        echo $sql;
     }
 
     function getOrders()
