@@ -62,7 +62,21 @@ class Controller
             }
         }
         $view = new Template();
-        echo '<h1>Welcome to my Home Page</h1>';
+        //echo '<h1>Welcome to my Home Page</h1>';
+        var_dump($_POST);
         echo $view->render('views/demo-01.html');
+    }
+
+    /**
+     * Process the summary route
+     */
+    public function summary()
+    {
+        //var_dump($_SESSION);
+        var_dump($_POST);
+        echo "Thank You!";
+
+        $view = new Template();
+        echo $view->render('views/summary.html');
     }
 }
