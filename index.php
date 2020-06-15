@@ -22,7 +22,7 @@ global $controller;
 $f3 = Base::instance();
 $validator = new Validation();
 $controller = new Controller($f3, $validator);
-$db = new Database();
+$dbh = new Database();
 
 // define a default route
 /*$f3->route('GET /', function($f3) {
