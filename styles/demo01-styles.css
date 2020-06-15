@@ -31,6 +31,10 @@ p {
     color: white;
 }
 
+#footPhone {
+    color: white;
+}
+
 #navAbout, #navProd, #navSvcs {
     background-color: #27343e;
     color: white;
