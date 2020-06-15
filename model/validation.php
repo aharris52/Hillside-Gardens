@@ -85,6 +85,7 @@ class Validation
         return in_array($product, $checkProduct);
     }
 
+
     function validQuantity($quantity){
         $quantity = str_replace(' ', '', $quantity);
         return is_numeric($quantity);
