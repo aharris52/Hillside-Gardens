@@ -22,14 +22,14 @@ class Database
         try {
             //Instantiate a database object
             $this->_dbh = new PDO(DB_DSN, DB_USERNAME, DB_PASSWORD);
-            echo 'Connected to database!';
+            //echo 'Connected to database!';
         }
         catch(PDOException $e) {
             echo $e->getMessage();
         }
     }
 
-    function writeOrder($qty, $product)
+    function writeOrder($customer)
 {
     //var_dump($order);
 
@@ -53,22 +53,22 @@ class Database
     //echo $row['fname'];
 }
 
-    function writeCustomer($fName, $lName, $phone, $email)
+    function writeCustomer($customer)
     {
         //var_dump($order);
 
         //Write to database
         // 1. define query
-        $sql = "INSERT INTO `Customer` VALUES ('NULL',:fName, :lName, :phone, :email)";
+        $sql = "INSERT INTO `Customer` (first, last, phone, email) VALUES (:fName, :lName, :phone, :email)";
 
         // 2. prepare statement
         $statement = $this->_dbh->prepare($sql);
 
         // 3. bind parameters
-        $statement->bindParam(':first', $fName->getFname());
-        $statement->bindParam(':last', $lName->getLname());
-        $statement->bindParam(':phone', $phone->getPhone());
-        $statement->bindParam(':email', $email->getEmail());
+        $statement->bindParam(':first', $customer->getFirstName());
+        $statement->bindParam(':last', $customer->getLastName());
+        $statement->bindParam(':phone', $customer->getPhone());
+        $statement->bindParam(':email', $customer->getEmail());
 
         // 4. Execute the statement
         $statement->execute();
@@ -77,6 +77,7 @@ class Database
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $result;
         echo $sql;
+        echo "test";
     }
 
     function getOrders()
