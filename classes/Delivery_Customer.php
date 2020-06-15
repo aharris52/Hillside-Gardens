@@ -26,7 +26,9 @@ class Delivery_Customer extends Customer
      *
      * takes additional parameters required for a Delivery_Customer
      */
-    public function __construct($firstName, $lastName, $phone, $email, $product, $quantity, $date, $address)
+    public function __construct($firstName = 'joe', $lastName = 'blow', $phone = '1234567890',
+                                $email = 'generic@email.com', $product = 'shavings', $quantity = '5',
+                                $date = '1/1/2021', $address = 'thisAVE 98092')
     {
         $this->setFirstname($firstName);
         $this->setLastname($lastName);
