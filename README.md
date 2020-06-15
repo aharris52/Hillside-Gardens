@@ -38,3 +38,4 @@ lots of time and energy has been put into the project, many roadblocks
 have come up along the way and we have done our best to try and overcome them.
 
 -GitHub repo includes readme file outlining how each requirement was met; UML diagram; and ER diagram
+
