@@ -3,68 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Hillside Gardens</title>
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles/demo01-styles.css">
-
-    <!-- Bootstrap Styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
-
-    <!-- favicon -->
-    <link rel="icon" href="images/hillside favicon.png" type="image/png"/>
-    <!--<include href="includes/header.htm"></include>-->
+    <!-- HEADER -->
+    <!---------------------------------------------------------------------------------------------------------->
+    <include href="includes/header.htm"></include>
 
 </head>
 <body id="htmlBody">
-<!-- HEADER -->
-<!---------------------------------------------------------------------------------------------------------->
+
 <div class="container-fluid" id="body">
-    <div class="container-fluid" >
-        <div class="row justify-content-center">
-            <img src="images/hillside fb 2.png" class="img-fluid" alt="Responsive image">
-        </div>
-    </div>
-    <!-- NavBar Header -->
-    <div class="container">
-    <div class="row fixed-top position-sticky" id="navRow"> <!--header-->
-        <div class="col align-self-center">
-            <nav class="navbar navbar-dark bg-dark navbar-expand-lg"><!-- overall navbar-->
-                <div class="container" id="navBar">
-                    <button class="navbar-toggler" type="button"
-                            data-toggle="dropdown" data-target="#myTogglerNav"
-                            aria-controls="myTogglerNav"
-                            aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" data-toggle="collapse" id="myTogglerNav"><!-- navbar collapseing menu-->
-                        <div class="navbar-nav">
-                            <div class="nav-item nav-link">
-                                <a id="navAbout" href="#about"
-                                   name ="link">About</a> <!-- navlink about-->
-                            </div>
-                            <div class="nav-item nav-link">
-                                <a  href="#products"
-                                    name ="link"
-                                    id="navProd">Products</a> <!--navlink products-->
-                            </div>
-                            <div class="nav-item nav-link ">
-                                <a id="navSvcs" href="#services"
-                                   name ="link">Services</a><!-- navlink services-->
-                            </div>
-                        </div> <!-- navbar nav-->
-                    </div> <!-- collapse-->
-                    <img class="m-1" src="images/hillside favicon.png"
-                         width="70"
-                         height="70" alt="icon">
-                    <a class="navbar-brand">HILLSIDE</a><!-- navbar heading-->
-                </div> <!--nav container -->
-            </nav> <!-- overall nav -->
-        </div>
-    </div><br><!-- end of header-->
-    <!---------------------------------------------------------------------------------------------------------->
-    <!-- CLOSE HEADER -->
+    <!-- TOP LEVEL LOGO -->
+    <include href="includes/logo.htm"></include>
+
+    <!-- NAV -->
+    <include href="includes/nav.htm"></include>
+
 <!-- BODY -->
 <!---------------------------------------------------------------------------------------------------------->
 
@@ -76,7 +28,7 @@
         <div class="hr">
             <hr>
         </div>
-        <p>Since 1983 Hillside Gardens Sawdust & Shavings has been the choice for your wood products needs.
+        <p id="aboutP">Since 1983 Hillside Gardens Sawdust & Shavings has been the choice for your wood products needs.
         Whether it's a small landscape fresh-up, or a complete transformation we have the product you need
         at a fair price. Recognized by the Pierce County Conservation District as an outstanding community
         partner. We're here to help you conserve and beautify your own small piece of the Great Northwest.</p>
@@ -91,10 +43,11 @@
             </div>
         </div>
     </div>
+    <!-- Close About -->
+    <!---------------------------------------------------------------------------------------------------------->
 
     <!-- Products -->
     <!---------------------------------------------------------------------------------------------------------->
-
     <div class="container-fluid" id="products">
         <br>
         <!-- Heading Row -->
@@ -102,177 +55,11 @@
         <div class="hr">
             <hr>
         </div>
-        <p>We carry the finest locally-sourced, all natural wood products. You won't find any
+        <p id="prodP">We carry the finest locally-sourced, all natural wood products. You won't find any
             artificial dyes or petro-chemical fertilizers here. We sell only nature's best and untreated
             products. All top soil is organic and locally sourced, and the bark and chips are from local suppliers.</p>
         <!-- Close Heading Row -->
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card" style="width: 30rem;">
-                    <div class="card-header">
-                        <img src="images/topsoil.jpg" class="card-img-top" alt="material">
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
-                                                                       data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Order Material
-                    </button></a></div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card" style="width: 30rem;">
-                    <div class="card-header">
-                        <img src="images/pinebark-large_2_500x.jpg" class="card-img-top" alt="material">
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
-                                                                       data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Order Material
-                    </button></a></div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card" style="width: 30rem;">
-                    <div class="card-header">
-                        <img src="images/sawdust.jpg" class="card-img-top" alt="material">
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
-                                                                       data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Order Material
-                    </button></a></div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card" style="width: 30rem;">
-                    <div class="card-header">
-                        <img src="images/cedar-playground-chips.jpg" class="card-img-top" alt="material">
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#scroll">
-                        <button class="btn btn-primary"
-                               type="button"
-                               data-toggle="collapse"
-                               data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            Order Material
-                        </button></a></div>
-                </div>
-            </div>
-        </div><br>
-
-        <div id="scroll"></div>
-
-        <!-- Collapsible Form -->
-        <!---------------------------------------------------------------------------------------------------------->
-        <div class="collapse" id="collapseExample">
-            <!-- Conact Info -->
-            <form id="Order" action="#" method="post">
-                <fieldset class="form-group" >
-                    <div class="form-row">
-                        <div class="form-group col-md-6"><!-- first name -->
-                            <label for="firstName">First Name</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="firstName"
-                                   name="firstName"
-                                   placeholder="First Name">
-                            <span class="err"
-                                  id="errFname">Please enter a first name</span>
-                        </div><!-- first name -->
-
-                        <div class="form-group col-md-6"><!-- last name -->
-                            <label for="lastName">Last Name</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="lastName"
-                                   name="lastName"
-                                   placeholder="Last Name">
-                            <span class="err"
-                                  id="errLname">Please enter a last name</span>
-                        </div><!-- last name -->
-
-                        <div class="form-group col-md-6">
-                            <label for="phone">Phone Number</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="phone"
-                                   name="phone"
-                                   placeholder="Phone Number">
-                            <span class="err"
-                                  id="errNumber">Please enter a first name</span>
-                        </div><!-- Phone Number -->
-
-                        <div class="form-group col-md-6">
-                            <label for="email">Email</label>
-                            <input type="text"
-                                   class="form-control"
-                                   id="email"
-                                   name="email"
-                                   placeholder="Email">
-                            <span class="err"
-                                  id="errEmail">Please enter a first name</span>
-                        </div><!-- Email -->
-
-                        <!-- Material -->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="material">Material</label><br>
-                                <select class="custom-select"
-                                        id="material"
-                                        name="material">
-                                    <repeat group="{{ @material }}" value="{{ @product }}">
-                                        <option value="{{ @product }}"
-                                                name="material">
-                                            <check if="{{ @product == @selected }}"> selected="selected" </check>> {{ @product }} </option>
-                                    </repeat>
-                                </select>
-                            </div>
-
-                            <!-- Error message -->
-                            <span class="error">
-                        <check if="{{ isset(@errors['quantity']) }}">
-                            {{ @errors['quantity'] }}
-                        </check>
-                        </span><br>
-
-                            <div class="form-group col-md-6">
-                                <label for="qty">Quantity</label>
-                                <input type="number"
-                                       class="form-control"
-                                       id="qty"
-                                       name="qty"
-                                       placeholder="Quantity">
-                                <span class="err"
-                                      id="errQty">Please choose how much you want</span>
-                            </div>
-                        </div>
-
-                        <!-- Button -->
-                        <div class="col-sm-8">
-                            <button type="submit"
-                                    class="btn btn-secondary"
-                                    href="home">Submit</button>
-                        </div>
-                    </div>
-                </fieldset>  <!-- Contact Info -->
-            </form>
-        </div>
-        <br><br>
-
+    </div>
     <!-- Close Products -->
     <!---------------------------------------------------------------------------------------------------------->
 
@@ -286,131 +73,16 @@
         <div class="hr">
             <hr>
         </div>
-        <p>We have been in business over 30 years because we know how business is done. If you need delivery
+        <p id="svcP">We have been in business over 30 years because we know how business is done. If you need delivery
             to your home, jobsite, or farm we're here for you.</p>
 
-        <div class="row .justify-content-center" id="">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="images/kb7.jpg" class="card-img-top" alt="material">
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
-                                                                       data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Order Material
-                    </button></a></div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="images/hopper.jpg" class="card-img-top" alt="material">
-                    </div>
-                    <div class="card-body">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="card-footer"><a href="#scroll"><button class="btn btn-primary" type="button" data-toggle="collapse"
-                                                                       data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Order Material
-                    </button></a></div>
-                </div>
-            </div>
-        </div><!-- Close Services -->
-        <br>
+    </div><!-- Close Services -->
+    <br>
+    <!---------------------------------------------------------------------------------------------------------->
 
-<!---------------------------------------------------------------------------------------------------------->
-    <!-- FOOTER START -->
-    <!-- Bark -->
-    <div class="row justify-content center" id="bark">
-        <div class=".col align-self-center">
-            <img src="images/wood-strip.png" class="img-fluid" alt="Responsive image">
-        </div>
-    </div>
+    <!-- Footer -->
+    <include href="includes/footer.htm"></include>
 
-    <!-- Map -->
-    <div class="row justify-content center" id="map">
-        <div class=".col align-self-center">
-            <a href="https://www.google.com/maps/dir/47.3408096,-122.1931818/
-            hillside+gardens+sawdust+buckley+wa/@47.2584832,-122.3044268,11z/
-            data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x5490efc7a5c1da77:0x7679e394d2549150!2m2!1d-122.0667807!2d47.1608686"
-               target="_blank">
-                <img src="images/map.PNG" class="img-fluid" alt="Responsive image"></a>
-        </div>
-    </div>
-
-    <div class="hr">
-        <hr>
-    </div>
-
-    <!-- Footer Row 1-->
-    <div class="row justify-content-between" id="footRow1">
-        <div class="col-md-auto">
-            <img src="images/bottom logo.png" class="img-fluid" alt="Responsive image">
-        </div>
-        <div class="col-md-auto">
-            <h5>Address:</h5>
-            <p>27213 WA-410 E</p>
-            <p>Buckley, Wa 98321</p>
-            <br>
-            <h5>Phone:</h5>
-            <a id="footPhone" href="tel:360-829-2707">(360) 829-2707</a>
-            <p>Admin</p>
-        </div>
-        <div class="col-md-auto">
-            <h5>Hours of Operation</h5>
-            <p>Monday -Friday:</p>
-            <p>8:00am - 5:00pm</p><br>
-            <p>Saturday:</p>
-            <p>9:00am - 2:00pm</p><br>
-            <p>Sunday: Closed</p>
-        </div>
-    </div>
-    <!-- Close Footer Row 1-->
-
-    <div class="hr">
-        <hr>
-    </div>
-
-    <!-- Footer row 2-->
-    <div class="row justify-content-center" id="footRow2">
-        <div class="hr">
-            <hr>
-        </div>
-        <!-- found on mdbootstrap.com -->
-        <footer class="page-footer">
-            <!-- Copyright -->
-            <div id="footer" class="footer-copyright text-center py-3">© 2020 Copyright:
-                <a id="myURL" href="#">Hillside Gardens</a>
-            </div>
-        </footer>
-    </div><!-- Footer row 2-->
-
-    <!-- Footer row 3-->
-    <div class="row justify-content-center" id="footRow3">
-        <footer class="page-footer">
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/pages/Hillside-Gardens-Sawdust-Shavings-Co/1007213572652447"
-               target="_blank"
-               class="fa-lg p-2 m-2 li-ic"><i id="fbLink" class="fab fa-facebook-f grey-text"></i></a><br>
-        </footer>
-    </div><!-- Footer row 3-->
-
-</div><!-- Body container -->
-<br>
-
-
-<!-- fontAwesome link-->
-<script src="https://kit.fontawesome.com/b3af656e9f.js" crossorigin="anonymous"></script>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="../JS/validation.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+</div><br><!-- Body container -->
 </body>
 </html>

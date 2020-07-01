@@ -19,6 +19,15 @@ div.row, div.row.fixed-top, div.jumbotron, div.container-fluid, div.container, d
     color: white;
 }
 
+#navTarget {
+    background-color: #27343e;
+    color: white;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+
+
 nav, a {
     color: white;
 }
@@ -27,7 +36,11 @@ li {
     color: white;
 }
 
-p {
+.card {
+    color: black;
+}
+
+#aboutP, #prodP, #svcP{
     color: white;
 }
 
@@ -38,7 +51,7 @@ p {
 #navAbout, #navProd, #navSvcs {
     background-color: #27343e;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 div.card {
@@ -51,7 +64,7 @@ div.hr {
 }
 
 div#about, div#services, div#products {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 #htmlBody {
