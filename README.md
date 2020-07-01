@@ -1,5 +1,7 @@
 # Hillside-Gardens
 This is the repository for IT 328 final project
+<<<<<<< HEAD
+=======
 
 -Separates all database/business logic using the MVC pattern.
 
@@ -59,3 +61,4 @@ have come up along the way and we have done our best to try and overcome them.
 
 -GitHub repo includes readme file outlining how each requirement was met; UML diagram; an ER diagram
 
+>>>>>>> 4ec8fee63ea2ad7f0bf528e70811b3d1eecd7dfe

@@ -2,8 +2,7 @@
 
 /**
  * Class Controller
- * Contains the DB connection and
- * processing logic
+ * Contains routing and error handling
  *
  * @author Andrew Harris
  * @author Ben Halbert
@@ -89,7 +88,7 @@ class Controller
         }
         $view = new Template();
         //echo '<h1>Welcome to my Home Page</h1>';
-        var_dump($_POST);
+        //var_dump($_POST);
         echo $view->render('views/demo-01.html');
     }
 
