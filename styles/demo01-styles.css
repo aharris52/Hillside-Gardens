@@ -22,11 +22,7 @@ div.row, div.row.fixed-top, div.jumbotron, div.container-fluid, div.container, d
 #navTarget {
     background-color: #27343e;
     color: white;
-    padding: 0px 0px;
-    margin: 0px 0px;
 }
-
-
 
 nav, a {
     color: white;
