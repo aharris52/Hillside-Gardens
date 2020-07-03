@@ -19,6 +19,14 @@ div.row, div.row.fixed-top, div.jumbotron, div.container-fluid, div.container, d
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+#navTarget {
+    background-color: #27343e;
+    color: white;
+}
+
+>>>>>>> 466daf56b3a511fee245a0f20347fbf4fa495b67
 nav, a {
     color: white;
 }
