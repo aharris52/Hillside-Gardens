@@ -20,7 +20,7 @@ div.row, div.row.fixed-top, div.jumbotron, div.container-fluid, div.container, d
 }
 
 #navTarget {
-    background-color: #27343e;
+    background-color: #27343e!important;
     color: white;
 }
 
